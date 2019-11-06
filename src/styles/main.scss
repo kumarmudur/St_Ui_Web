@@ -1,0 +1,138 @@
+$padding-left: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #555555;
+
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#content {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+  }
+
+div#main {
+  height: 100%;
+}
+.noMatch {
+  text-align: center;
+  background-color: $pink;
+  min-width:200px;
+}
+
+.loggedInUser {
+  cursor: pointer;
+  .topNavMenu {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    z-index:998;
+    top: 50px;
+    right: 26px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .4);
+    a:hover {
+        background-color: #83949F;
+        color: #FFFFFF;
+    }
+  }
+.topNavMenu:after{
+  content:"";
+    position: absolute;
+    right: 60px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+    z-index:998;
+}
+
+  img {
+    margin: 2px 5px 0px 0px;
+  }
+    text-transform: capitalize;
+    color: #ffffff;
+    height: 30px;
+    float: right;
+    padding-bottom: 40px;
+    width: auto;
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 18px 30px;
+
+    &:hover .topNavMenu {
+      display: block;
+      position: absolute;
+      z-index: 999;
+    }
+    .topNavMenuLinks {
+      padding: 5% 0 0% 10%;
+      display: block !important;
+      border-bottom: 1px solid #e8e8e8;
+      color: #555555;
+      height: 40px;
+      width: 150px;
+      text-transform: capitalize;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+}
+
+@mixin radius($roundCorner) {
+  -webkit-border-radius: $roundCorner;
+	-moz-border-radius: $roundCorner;
+  border-radius: $roundCorner;
+}
+
+.roundedCorner {
+	@include radius(10px);
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.image-margin {
+  margin-right: 5px;
+}
+
+.containerStyle {
+  padding-left: $padding-left;
+}
+
+.bg-content {
+  background-color: #f5f5f5 !important;
+  padding: 0 !important;
+}
+
+.organizationSideheading {
+  padding: 10px;
+  font-size: 1.75rem;
+}

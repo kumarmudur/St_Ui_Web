@@ -1,0 +1,225 @@
+{
+        "importedFiles": [
+            {
+                "_id": {
+                    "timestamp": 1551430376,
+                    "machineIdentifier": 12752370,
+                    "processIdentifier": 18604,
+                    "counter": 814219,
+                    "date": "2019-03-01T08:52:56.000+0000",
+                    "time": 1551430376000,
+                    "timeSecond": 1551430376
+                },
+                "originalFileName": "userImportFormat.csv",
+                "fileName": "1551430345281userImportFormat.csv",
+                "filePath": "D:/uploads/temp/",
+                "date": "2019-03-01T08:52:43.253+0000",
+                "mode": "delete",
+                "status": "2 record/s failed to import",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-01T08:52:56.060+0000",
+                "updatedDateTime": "2019-03-01T08:52:56.060+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1551430477,
+                    "machineIdentifier": 12752370,
+                    "processIdentifier": 18604,
+                    "counter": 814222,
+                    "date": "2019-03-01T08:54:37.000+0000",
+                    "time": 1551430477000,
+                    "timeSecond": 1551430477
+                },
+                "originalFileName": "userImportFormat.csv",
+                "fileName": "1551430477264userImportFormat.csv",
+                "filePath": "D:/uploads/temp/",
+                "date": "2019-03-01T08:54:37.272+0000",
+                "mode": "replace",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-01T08:54:37.508+0000",
+                "updatedDateTime": "2019-03-01T08:54:37.508+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1551446623,
+                    "machineIdentifier": 12752370,
+                    "processIdentifier": 13752,
+                    "counter": 1046118,
+                    "date": "2019-03-01T13:23:43.000+0000",
+                    "time": 1551446623000,
+                    "timeSecond": 1551446623
+                },
+                "originalFileName": "userImportFormat.csv",
+                "fileName": "1551446592229userImportFormat.csv",
+                "filePath": "D:/uploads/temp/",
+                "date": "2019-03-01T13:23:17.455+0000",
+                "mode": "replace",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-01T13:23:43.682+0000",
+                "updatedDateTime": "2019-03-01T13:23:43.682+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552654687,
+                    "machineIdentifier": 522649,
+                    "processIdentifier": 9793,
+                    "counter": 10373699,
+                    "date": "2019-03-15T12:58:07.000+0000",
+                    "time": 1552654687000,
+                    "timeSecond": 1552654687
+                },
+                "originalFileName": "userImportFormat.csv",
+                "fileName": "15526546872851552654686831_userImportFormat.csv",
+                "filePath": "/home/docker/uploads/15526546872851552654686831_userImportFormat.csv",
+                "date": "2019-03-15T12:58:07.285+0000",
+                "mode": "add/update",
+                "status": "2 record/s failed to import",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-15T12:58:07.287+0000",
+                "updatedDateTime": "2019-03-15T12:58:07.287+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552903517,
+                    "machineIdentifier": 522649,
+                    "processIdentifier": 9793,
+                    "counter": 10373717,
+                    "date": "2019-03-18T10:05:17.000+0000",
+                    "time": 1552903517000,
+                    "timeSecond": 1552903517
+                },
+                "originalFileName": null,
+                "fileName": "1552903517165userImporFormat.csv",
+                "filePath": "/home/docker/uploads/1552903517165userImporFormat.csv",
+                "date": "2019-03-18T10:05:17.165+0000",
+                "mode": "add/update",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-18T10:05:17.171+0000",
+                "updatedDateTime": "2019-03-18T10:05:17.171+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552907171,
+                    "machineIdentifier": 3057574,
+                    "processIdentifier": 10456,
+                    "counter": 6222767,
+                    "date": "2019-03-18T11:06:11.000+0000",
+                    "time": 1552907171000,
+                    "timeSecond": 1552907171
+                },
+                "originalFileName": "userImporFormat.csv",
+                "fileName": "167788_userImporFormat.csv",
+                "filePath": "/home/docker/uploads/167788_userImporFormat.csv",
+                "date": "2019-03-18T11:05:29.847+0000",
+                "mode": "add/update",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-18T11:06:11.212+0000",
+                "updatedDateTime": "2019-03-18T11:06:11.212+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552907603,
+                    "machineIdentifier": 3057574,
+                    "processIdentifier": 10456,
+                    "counter": 6222768,
+                    "date": "2019-03-18T11:13:23.000+0000",
+                    "time": 1552907603000,
+                    "timeSecond": 1552907603
+                },
+                "originalFileName": "userImporFormat.csv",
+                "fileName": "167788_userImporFormat.csv",
+                "filePath": "/home/docker/uploads/167788_userImporFormat.csv",
+                "date": "2019-03-18T11:13:21.606+0000",
+                "mode": "add/update",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-18T11:13:23.507+0000",
+                "updatedDateTime": "2019-03-18T11:13:23.507+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552907922,
+                    "machineIdentifier": 3057574,
+                    "processIdentifier": 10456,
+                    "counter": 6222769,
+                    "date": "2019-03-18T11:18:42.000+0000",
+                    "time": 1552907922000,
+                    "timeSecond": 1552907922
+                },
+                "originalFileName": "userImporFormat.csv",
+                "fileName": "167788_userImporFormat.csv",
+                "filePath": "/home/docker/uploads/167788_userImporFormat.csv",
+                "date": "2019-03-18T11:18:42.347+0000",
+                "mode": "add/update",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-18T11:18:42.617+0000",
+                "updatedDateTime": "2019-03-18T11:18:42.617+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552908180,
+                    "machineIdentifier": 3057574,
+                    "processIdentifier": 10456,
+                    "counter": 6222770,
+                    "date": "2019-03-18T11:23:00.000+0000",
+                    "time": 1552908180000,
+                    "timeSecond": 1552908180
+                },
+                "originalFileName": "userImporFormat.csv",
+                "fileName": "167788_userImporFormat.csv",
+                "filePath": "D:/uploads/temp/167788_userImporFormat.csv",
+                "date": "2019-03-18T11:22:59.783+0000",
+                "mode": "add/update",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-18T11:23:00.040+0000",
+                "updatedDateTime": "2019-03-18T11:23:00.040+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552909532,
+                    "machineIdentifier": 522649,
+                    "processIdentifier": 9793,
+                    "counter": 10373721,
+                    "date": "2019-03-18T11:45:32.000+0000",
+                    "time": 1552909532000,
+                    "timeSecond": 1552909532
+                },
+                "originalFileName": null,
+                "fileName": "1552909532427167788_userImporFormat.csv",
+                "filePath": "/home/docker/uploads/1552909532427167788_userImporFormat.csv",
+                "date": "2019-03-18T11:45:32.428+0000",
+                "mode": "add/update",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-18T11:45:32.431+0000",
+                "updatedDateTime": "2019-03-18T11:45:32.431+0000"
+            },
+            {
+                "_id": {
+                    "timestamp": 1552909640,
+                    "machineIdentifier": 3057574,
+                    "processIdentifier": 13352,
+                    "counter": 278113,
+                    "date": "2019-03-18T11:47:20.000+0000",
+                    "time": 1552909640000,
+                    "timeSecond": 1552909640
+                },
+                "fileName": "userImporFormat.csv",
+                "originalFileName": "167788_userImporFormat.csv",
+                "filePath": "D:/uploads/temp/167788_userImporFormat.csv",
+                "date": "2019-03-18T11:46:36.377+0000",
+                "mode": "add/update",
+                "status": "Processing",
+                "fileUploadStatusId": 0,
+                "createdDateTime": "2019-03-18T11:47:20.167+0000",
+                "updatedDateTime": "2019-03-18T11:47:20.167+0000"
+            }
+        ],
+        "code": 200
+    }

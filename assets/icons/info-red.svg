@@ -1,0 +1,7 @@
+<svg id="info-red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_7" data-name="Group 7">
+    <path id="Path_1" data-name="Path 1" d="M8,0a8,8,0,1,0,8,8A8.009,8.009,0,0,0,8,0ZM8,15.015A7.015,7.015,0,1,1,15.015,8,7.023,7.023,0,0,1,8,15.015Z" fill="#f01"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="0.823" cy="0.823" r="0.823" transform="translate(7.304 3.987)" fill="#f01"/>
+    <path id="Path_2" data-name="Path 2" d="M30.629,28.342a.492.492,0,0,0-.492.492v4.185a.492.492,0,0,0,.985,0V28.834A.492.492,0,0,0,30.629,28.342Z" transform="translate(-22.719 -21.366)" fill="#f01"/>
+  </g>
+</svg>

@@ -1,0 +1,262 @@
+$button-width: 42%;
+$line-height: 8px;
+
+.button-register {
+    width: 91%;
+    background-color: $dark_green;
+    border: 1px solid $dark_green;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    cursor: pointer;
+    color: #ffffff;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+@mixin button($height, $padding, $fontSize) {
+    width: 90%;
+    height: $height;
+    background-color: $dark_green;
+    border: 1px solid $dark_green;
+    text-align: center;
+    padding: $padding;
+    margin-left: 4%;
+    margin-top: 1%;
+    font-size: $fontSize;
+    cursor: pointer;
+    color: $white;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.button-login {
+    @include button(12%, 8px 0 8px 0, 14px);
+    width: 100%;
+    margin-left: 0%;
+}
+
+.button-forgotpassword {
+    @include button(12%, 8px 0 8px 0, 14px);
+    width: 100%;
+    margin-left: 0%;
+}
+
+.button-resetpassword {
+    @include button(12%, 8px 0 8px 0, 14px);
+    width: 100%;
+    margin-left: 0%;
+}
+
+
+@mixin btn-footer($bgColor, $marginRight, $color) {
+    height: 30px;
+    background-color: $bgColor;
+    border: none;
+    padding: 10px 15px;
+    min-width: 90px;
+    color: $color;
+    margin-left: 10px;
+    cursor: pointer;
+    line-height: $line-height !important;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-delete {
+   @include btn-footer($dark_green, 0, $white);
+   border:1px solid $dark_green;
+}
+
+.btn-cancel {
+    @include btn-footer($white, 10px, $dark_green);
+    border:1px solid $dark_green;
+}
+
+.btn-save {
+    @include btn-footer($dark_green, 10px, $white);
+    border:1px solid $dark_green;
+    &:focus {
+        outline: none;
+    }
+}
+
+.filterButton {
+    @include btn-footer($dark_green, 10px, $white);
+    border:1px solid $dark_green;
+    &:focus {
+        outline: none;
+    }
+}
+.btn-additional-info {
+    @include btn-footer($dark_green, 10px, $white);
+    border:1px solid $dark_green;
+    width: auto;
+    &:focus {
+        outline: none;
+    }
+ }
+
+@mixin btn-nav($margin) {
+    height: 28px;
+    width: auto;
+    color: white;
+    margin: $margin;
+    background-color: $dark_green;
+    border: 1px solid $white;
+    padding: 0 17px;
+    // border: 1px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    line-height: $line-height;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-navadd {
+    @include btn-nav(10px);
+}
+
+.btn-navexport {
+    @include btn-nav(10px);
+}
+
+.btn-roles {
+    height: 30px;
+    background-color: $white;
+    margin: 5px;
+    border: 1px solid $dark_green;
+    color: $dark_green;
+    padding: 3px 10px 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.btn-footer-cancel {
+    @include btn-footer($white, 10px, $dark_green);
+    border:1px solid $dark_green;
+    line-height: $line-height;
+}
+
+.btn-footer-submit {
+    @include btn-footer($dark_green, 10px, $white);
+    line-height: $line-height;
+    border:1px solid $dark_green;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.department-submit {
+    width: auto;
+}
+
+
+.btn-editofficeinfo {
+    border:1px solid $dark_green;
+    color: $dark_green;
+    height: 30px;
+    background-color: $white;
+    margin: 0 10px 10px 110px;
+    padding: 10px;
+    line-height: 8px;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-org-delete {
+    border:1px solid $dark_green;
+    color: $dark_green;
+    height: 30px;
+    background-color: $white;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    line-height: 8px;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.imgIconCurosr {
+    cursor: pointer
+}
+
+.btn-download {
+    height: 30px;
+    background-color: $white;
+    border: none;
+    padding: 10px;
+    width: 160px;
+    color: $dark_green;
+    margin-right: 10px;
+    cursor: pointer;
+    line-height: $line-height;
+    border:1px solid $dark_green;
+    line-height: $line-height;
+
+    &:hover {
+        background-color: #81929C;
+        color:#ffffff;
+        border: 1px solid #81929C;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+button:focus {
+    outline: none;
+    // border: none;
+}
+ 

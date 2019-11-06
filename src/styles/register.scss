@@ -1,0 +1,209 @@
+@import './Mixins/common.scss';
+.container {
+
+    .container-box {
+        width: 63%;
+        margin: 0 auto;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15); 
+        height: auto;
+        display:flex;
+        flex-wrap:wrap;
+        padding-bottom: 10px;
+        background-color: #ffffff;
+
+        .customer {
+            width: 50%;
+            float: left;
+            border: none;
+            border-bottom: 3px solid #e1e1e1;
+            padding: 2%;
+            text-align: center;
+            cursor: pointer;
+            font-weight: normal;
+            color: #999999;
+            font-size: 18px;
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .active {
+            border-bottom: 3px solid $dark_green !important;
+            color: $dark_green !important;
+            font-size: 18px;
+        }
+
+        .associate { 
+            width: 50%;
+            float: left;
+            border: none;
+            border-bottom: 3px solid #e1e1e1;
+            padding: 2%;
+            text-align: center;
+            cursor: pointer;
+            font-weight: normal;
+            color: #999999;
+            font-size: 18px;
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .css-1492t68 {
+            margin-left: 20px !important;
+        }
+
+        .input-item {
+                width:50%;
+                position:relative;
+                padding:0 15px;
+                height: auto;
+
+                .input-label{
+                    position:absolute;
+                    top:33px;
+                    z-index: 1;
+                }
+
+                .input-label-info {
+                    position:absolute;
+                    top: 33px;
+                    right: 25px;
+                    z-index: 1;
+                    display: -webkit-box;
+
+                    .togglepassword {
+                        cursor: pointer;
+                        margin-right: 6px;
+                        color: #29856B;
+                        margin-top: 1px;
+                    }
+                }
+                input {
+                    width:100%;
+                    border:none;
+                    border-bottom: 1px solid $light_green_border;
+                    outline:none;
+                    margin-bottom: 5px;
+                    padding: 30px 10px 8px 26px !important;
+                    color: #555555;
+                    font-size: 14px;
+
+                    &:focus,
+                    &:active {
+                        border-bottom: 2px solid $dark_green;
+                    }
+                    &:focus + span {
+                        color: $dark_green;
+                    }
+                }
+                @include floating-label(17px);
+                
+                .form-input {
+                    span {
+                        color: $light_black;
+                    }
+    
+                    &:focus + span {
+                        color: $dark_green;
+                    }
+                }
+                .floating-label {
+                    margin:0;
+                    span {
+                        padding: 35px 0 4px 26px !important;
+                    }
+                }
+                
+                .floating-label input:focus + span, 
+                .floating-label textarea:focus + span, 
+                .floating-label.floating span {
+                    padding: 16px 0 0 26px !important; 
+                }
+
+                .error {
+                    margin: 0;
+                    color: $red;
+                    font-size: 12px;
+                    border: 1px solid #ffffff;
+                }
+         }
+
+        .phone-constant-wrapper {
+            input {
+                padding: 30px 10px 8px 39px !important;
+            }
+            
+            .phone-constant-register {
+                position: absolute;
+                top: 41%;
+                left: 8.5%;
+                color: #C0C0C0;
+                z-index: 1;
+            }
+
+            .floating-label {
+                span {
+                    padding-left: 38px !important;
+                }
+            }
+
+            label.floating-label.form-input.floating {
+               padding-top: 21px !important;
+               input {
+                    padding: 14px 10px 2px 39px !important;
+               }
+            }
+            .floating-label input:focus + span, 
+            .floating-label textarea:focus + span, 
+            .floating-label.floating span {
+                padding: 15px 0 0 22px !important; 
+            }
+        }
+
+         .already-register {
+            margin-top: 25px;
+            vertical-align: bottom;
+            height: auto;
+
+             span {
+                 color: #555555;
+                 margin-right: 3px;
+             }
+         }
+
+         .input-select {
+             width: 51%;
+             position:relative;
+             padding:0 15px;
+             margin-bottom:15px;
+
+             .input-label{
+                position:absolute;
+                top:2px;
+                z-index: 1;
+            }
+
+            .form-input{
+                width:100%;
+                border:none;
+                border-bottom:1px solid #e1e1e1;
+                outline:none;
+                padding:18px 10px 14px 30px
+            }
+        }
+
+        .btn-group-footer {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: bottom;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}
+
+.wrapper-main.register {
+    margin-bottom: 3%;
+}

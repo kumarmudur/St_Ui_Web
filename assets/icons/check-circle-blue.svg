@@ -1,0 +1,12 @@
+<svg id="check-circle" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <g id="Group_58" data-name="Group 58">
+    <g id="Group_57" data-name="Group 57">
+      <path id="Path_60" data-name="Path 60" d="M10.243,1.757a6,6,0,0,0-8.485,8.485,6,6,0,1,0,8.485-8.485ZM6,11.3A5.3,5.3,0,1,1,11.3,6,5.3,5.3,0,0,1,6,11.3Z" fill="#318de9"/>
+    </g>
+  </g>
+  <g id="Group_60" data-name="Group 60" transform="translate(3.143 4.048)">
+    <g id="Group_59" data-name="Group 59">
+      <path id="Path_61" data-name="Path 61" d="M134.916,169.566a.338.338,0,0,0-.478,0l-2.987,2.987-1.573-1.573a.338.338,0,0,0-.478.478l1.812,1.812a.338.338,0,0,0,.478,0l3.227-3.227A.338.338,0,0,0,134.916,169.566Z" transform="translate(-129.301 -169.467)" fill="#318de9"/>
+    </g>
+  </g>
+</svg>

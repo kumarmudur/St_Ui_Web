@@ -1,0 +1,25 @@
+.floating-label {
+    padding: 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+
+    span {
+        box-sizing: border-box;
+        font-size: 1rem;
+        left: 0;
+        padding: 35px 0 13px 12px !important;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transition: font-size 200ms, padding 200ms;
+        z-index: 1;
+    }
+    input, textarea {
+        font-family: 'Roboto', sans-serif !important;
+    }
+}
+
+.floating-label input:focus + span, .floating-label textarea:focus + span, .floating-label.floating span {
+    padding: 15px 0 0 17px !important;
+    font-size: 12px !important;
+    color: $light_black;
+}

@@ -1,0 +1,230 @@
+@import '../Mixins/inventory.scss';
+
+.container {
+
+    .main-section {
+        width: 100%;
+        margin-top: 3%;
+        height: auto;
+        background-color: $white;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15); 
+        position: relative;
+
+        @include title();
+
+        @include row();
+
+        @include product-grid();
+
+        // Product-General Section
+        .product-general {
+           @include title();
+           border-bottom: 1px solid $border-line;
+           padding: 5px;
+
+           @include row();
+
+           .warrant {
+               //margin: 30px 0 -18px 0;
+               padding-left: 0;
+
+               .checkbox-label {
+
+                .warrant-checkbox {
+                    width: 35px;
+                    margin: 0;
+                }
+             }
+           }
+
+            .upload-images {
+                width: 100%;
+                border-right: 1px solid #e9e9e9;
+                border-bottom: 1px solid #e9e9e9;
+                border-left: 1px solid #e9e9e9;
+                border-collapse: collapse;
+
+                .row {
+                    border-bottom: 1px solid #ced4da;
+
+                    .image-path {
+                        width: 40px;
+                        height: 40px;
+                        padding: 4px;
+                    }
+
+                    .image-name {
+                        margin: 10px 0 0 20px;
+                    }
+
+                    .img-delete {
+                        margin: 10px 0 0 20px;
+                    }
+                }
+            }
+      }
+
+        // Product-Specification Section
+        .product-specification {
+            @include title();
+            border-bottom: 1px solid $border-line;
+            padding: 5px;
+
+            
+            p.select-checkbox-appicable {
+                margin: 18px 0 0 14px !important;
+                color: $black;
+                font-size: 10px;
+            }
+
+            .row {
+
+                .checkbox-label {
+                    margin: 12px 0 0 12px;
+
+                    .warrant-checkbox {
+                        width: 35px;
+                        margin: 10px 0 0 10px;
+                    }
+                 }
+
+                 span {
+                     margin: 10px 0 0 2px;
+                 }
+            }
+
+            @include product-grid();
+        }
+
+        // Other-Price Section
+        .other-price {
+            @include title();
+            border-bottom: 1px solid $border-line;
+            padding: 5px;
+
+
+            @include row();
+            @include product-grid();
+
+            @include footer-btn-group(-30px);
+        }  
+
+        // Tier-Price Section
+        .tier-price {
+            @include title();
+            box-shadow: 0 0 6px rgba(0,0,0,0.10); 
+            padding: 5px;
+
+
+            @include product-grid();
+
+            @include footer-btn-group(-30px);
+        }
+
+        // Product-Price Section
+        .product-price {
+            @include title();
+            margin: 0 0 25px 0;
+            padding: 5px;
+            @include row();
+
+           p.selling-price {
+                margin: 18px 9 0 13px !important;
+                color: $black;
+                font-size: 10px;
+            }
+
+            .selling-price {
+                background-color: $light_gray;
+                margin: 10px 10px 0 10px;
+
+                .row {
+                    .inline-div {
+                        width: 20%;
+
+                        .Dropdown-root {
+                            top: -50px;
+                            left: 100px;
+
+                            .Dropdown-control {
+                                background-color: $light_gray;
+                                border-bottom: 1px solid $dark_green;
+                            }
+                        }
+                    }
+
+                    .wrapper {
+
+                        input {
+                            background-color: $light_gray;
+                        }
+
+                        .selling-price-label {
+                            margin: 20px 10px 10px 10px;
+                        }
+                    }
+                }
+
+                .price-row {
+                    margin: 12px 0 -60px 0;
+                }
+            }
+        }
+
+        .product-assembly {
+            @include title();
+            border-bottom: 1px solid $border-line;
+            padding: 5px;
+           
+            @include row();
+
+            @include product-grid();
+
+            @include footer-btn-group(-30px);
+
+        }
+
+        // PRoduct-Stock Section
+        .product-stock {
+            @include title();
+            border-bottom: 1px solid $border-line;
+            padding: 5px;
+
+            @include row();
+
+            .total-price-row {
+                border-bottom: 2px solid $dark_green;
+
+                .price-header {
+                    width: 48%;
+                }
+            }
+        }
+
+
+        // Product-Warehouse Section
+        .product-entry {
+            @include title();
+            border-bottom: 1px solid $border-line;
+            padding: 5px;
+
+            .row {
+
+                .checkbox-label-entry {
+                    margin: 0 0 0 15px;
+                }
+     
+                .span-serial-number {
+                    margin: -2px 0 0 5px;
+                }
+
+            }
+
+            @include footer-btn-group(-30px);
+
+            @include product-grid();
+        }
+
+       @include footer-btn-group(30px);
+    }
+}   

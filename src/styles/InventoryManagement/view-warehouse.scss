@@ -1,0 +1,63 @@
+.container { 
+
+    .wrapper-view-warehouse {
+        width: 97%;
+        margin-top: 3%;
+        height: auto;
+        background-color: $white;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15); 
+        position: relative;
+
+        .warehouse-general {
+            p {
+                color: $dark_green;
+                padding: 10px 0 0 20px;
+            }
+
+            @mixin formContentStyle($textSize, $textColor) {
+                font-size: $textSize;
+                color: $textColor;
+            }
+
+            .row {
+                display: block;
+
+                .cols {
+                    display: inline-grid;
+                    width:25%;
+                    padding: 10px 0 5px 20px;
+                    
+                    .form-label {
+                        @include formContentStyle(12px, #999999);
+                        padding-bottom: 3px;
+                    }
+
+                    .form-label-text {
+                        @include formContentStyle(14px, #555555)
+                    }
+
+                    .phone-constant-readonly {
+                        color: #C0C0C0;
+                        margin-right: 3px;
+                    }
+                }
+            }
+
+            .text-align {
+                text-align: right;
+            }
+    
+            .field-padding {
+                margin: -32px 10px 0 0 ;
+            }
+        }
+
+        .border-separator {
+            border-bottom: 1px solid #e1e1e1;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+       
+    }
+   
+}

@@ -1,0 +1,65 @@
+.input-register {
+    border: none;
+    border-bottom: 1px solid $gray;
+    margin: 2%;
+    width: 46%;
+    float: left;
+    padding: 1%;
+
+    &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $blue;
+    }
+}
+
+textarea {
+    border: 1px solid #e1e1e1;
+    &:focus {
+        outline: none;
+    }
+}
+.form-textarea{
+    margin: 10px 0 0 15px;
+    padding: 5px;
+    width: 95%;
+}
+
+.input-login {
+    width: 85%;
+    margin-bottom: 2%;
+    padding: 4%;
+    box-sizing: border-box;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid $gray;
+
+    &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $blue;
+    }
+}
+
+.input-search {
+    width: 90%;
+    height: 31px;
+    padding-left:15px;
+    border: 0 none;
+    background-color:$dark_green1;
+    color: $white;
+    outline: none;
+
+    &::placeholder {
+        color:$white;
+        opacity: 1; 
+    }
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html lang="eng">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Rooftop area</title>
+      <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 90%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        #warning {
+          color: #ff0000;
+        }
+      </style>
+    </head>
+    <body>
+            <div>
+              <!-- <button onclick="javascript:drawPolygons(map)">New Block</button>
+              <button onclick="javascript:reset()">Reset</button> -->
+            </div>
+            <button onclick="reset()">Reset</button>
+            <button onclick="drawSelection()"> Draw Selection</button>
+            <button onclick="drawLeftout()">Draw Left Out</button> <span id="warning"></span>
+            <div id="info"></div>
+            <div id="map"></div>
+        <script>
+          var map;
+          var leftout = false;
+          var arr = new Array();
+          var overAllArea = 0;
+          var leftoutArea = 0;
+
+          function drawSelection() {
+            drawPolygons(map, false);
+          }
+          function reset() {
+            var res = confirm("Are you sure to reset ? This will erase all maps drawing progress !");
+            if(res) {
+              leftout = false;
+              overAllArea=0;
+              leftoutArea = 0;
+              initMap();
+             }
+            
+          }
+          function drawLeftout() {
+            leftout = true;
+            drawPolygons(map, leftout);
+          }
+
+          function drawPolygons(map, leftout) {
+            document.getElementById('warning').innerHTML = leftout ? 'You are drawing left out area' : '';
+            var drawingManager = new google.maps.drawing.DrawingManager({
+                drawingMode: google.maps.drawing.OverlayType.POLYGON,
+                drawingControl: false,
+                drawingControlOptions: {
+                    position: google.maps.ControlPosition.TOP_CENTER,
+                    drawingModes: ['polygon']
+                },
+                polygonOptions: {
+                  fillColor: leftout ? '#ff0000' : '#faff00' ,
+                  fillOpacity: leftout ? 1 : 0.5,
+                  strokeWeight: 2,
+                  strokeColor: '#57ACF9',
+                  clickable: false,
+                  editable: true,
+                  zIndex: 1
+                }
+                });
+               /*  google.maps.event.addListener(map,'click',function(event) {                
+                  document.getElementById('info').innerHTML = event.latLng.lat() + ', ' + event.latLng.lng();
+                });
+
+                google.maps.event.addListener(map,'mousemove',function(event) {
+                  document.getElementById('info').innerHTML = event.latLng.lat() + ', ' + event.latLng.lng();
+                }); */
+
+                drawingManager.setMap(map);
+
+                google.maps.event.addListener(drawingManager, 'polygoncomplete', function(polygon) {
+                  // document.getElementById('info').innerHTML += "polygon points:" + "<br>";
+                  // for (var i = 0; i < polygon.getPath().getLength(); i++) {
+                  //   document.getElementById('info').innerHTML += polygon.getPath().getAt(i).toUrlValue(6) + "<br>";
+                  // }
+                  if(leftout) {
+                    leftoutArea += google.maps.geometry.spherical.computeArea(polygon.getPath());
+                  } else {
+                    overAllArea += google.maps.geometry.spherical.computeArea(polygon.getPath());
+                  }
+                  overAllArea -= leftoutArea;
+                  overAllArea = overAllArea >=0 ? overAllArea : 0;
+
+                  var sqFeetArea = overAllArea.toFixed(2) * 10.764;
+
+                  document.getElementById('info').innerHTML = 
+                  //'Selected Area : ' + overAllArea.toFixed(2) + ' m <sup>2</sup>';
+                  //'Left Out Area : ' + overAllArea.toFixed(2) + ' m <sup>2</sup>';
+                  'Selected Area : ' + overAllArea.toFixed(2) + ' m<sup>2</sup>' + ', ' + sqFeetArea.toFixed(2) + 'ft<sup>2</sup>';
+                });
+
+              }
+
+              function initMap() {
+                document.getElementById('warning').innerHTML = '';
+                document.getElementById('info').innerHTML = '';
+                //document.getElementById('info').innerHTML = 'Total Area : ' + overAllArea.toFixed(2) + ' m <sup>2</sup>';
+                //document.getElementById('info').innerHTML = 'Total Area :  0 m<sup>2</sup>' + ',  0 ft<sup>2</sup>';
+                // Map Center
+                var myLatLng = new google.maps.LatLng( 12.974065, 77.617497);
+                // General Options
+                var mapOptions = {
+                  zoom: 20,
+                  center: myLatLng,
+                  mapTypeId: 'satellite'
+                };
+                
+                map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                drawPolygons(map, false);
+              }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMRinBN5DcVt1q_Zga_2eREM1HMfrciuU&libraries=drawing&callback=initMap"
+             async defer></script>
+    </body>
+</html>

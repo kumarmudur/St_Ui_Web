@@ -1,0 +1,134 @@
+.role-container {
+    width: 100%;
+    height: auto;  
+     .container-header {
+        left: 66px;
+        position: absolute;
+        top: 60px;
+    
+        p {
+            font-size: 18px;
+            color: $dark_green;
+        }
+    }
+
+.content {
+    background-color: #f5f5f5;
+   
+    .wrapper-addrole {
+        width: 100%;
+        // margin: 5% 0 0 2%;
+        height: auto;
+        background-color: $white;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15);
+        padding-top: 20px;
+
+        .wrapper-input {
+            display: block;
+
+            .form-input-role {
+                padding-top: 15px;
+                margin-bottom: 8px;
+
+                label {
+                    position: absolute;
+                    top: 70px;
+                    left: 45px;
+                    transition: all 0.2s linear;
+                    opacity: 0;
+                  }
+                
+                  .on {
+                      opacity: 1;
+                      color: #474747;
+                  }
+            }
+
+            input {
+                border:none;
+                border-bottom:1px solid #e1e1e1;
+                outline:none;
+                padding:14px 10px 10px 5px;
+                margin-left: 15px;
+                width: 35%;
+
+                &:focus,
+                &:active {
+                    border-bottom: 2px solid $blue;
+                }
+            }
+
+            .btn-nav {
+                margin: 20px 0 0 10px;
+
+                .active, .btn-roles:hover {
+                    background-color: $dark_green;
+                    color: $white;
+                }
+
+                .true {
+                    background-color: $dark_green;
+                    color: $white;
+                }
+            }
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 95%;
+            margin: 10px 0 0 16px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.15);
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+              
+            thead th {
+                border-bottom: 1px solid gray;
+                width: 12%;
+            }
+              
+            tr:hover {background-color:#f5f5f5;}
+        }
+
+        .btn-footer-group {
+            display: flex;
+            justify-content: flex-end;
+            margin: 30px 25px 0 0;
+            padding-bottom: 10px;
+        }
+
+        .error {
+            margin-left: 15px;
+        }
+    }
+
+   
+}
+
+}
+
+.container {
+
+    .viewrole-container {
+        width: 100%;
+        margin: 15px 0 0 0;
+        height: auto;
+        padding: 15px;
+        background-color: $white;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    
+        h1 {
+            font-size: 15px;
+            color: #318DE9;
+        }
+    
+        .row-info {
+            float: right;
+            margin: -45px 60px 0 0;
+        }
+    
+    }
+}
+

@@ -1,0 +1,104 @@
+{
+    "organization": {
+        "organizationName": "Testing",
+        "offices": [
+            {
+                "officeName": "USAOffice",
+                "country": "USA",
+                "state": "Atlanata",
+                "city": "NewYork",
+                "departments": [
+                    {
+                        "departmentName": "Sales40",
+                        "subDepartments": [
+                            {
+                                "subDepartmentName": "Market-Sale405"
+                            },
+                            {
+                                "subDepartmentName": "Market-Sales406"
+                            }
+                        ]
+                    },
+                    {
+                        "departmentName": "X Sales40",
+                        "subDepartments": [
+                            {
+                                "subDepartmentName": "X Market-Sale405"
+                            },
+                            {
+                                "subDepartmentName": "X Market-Sales406"
+                            }
+                        ]
+                    }
+                ],
+                "officeId": 4
+            },
+            {
+                "officeName": "POLP",
+                "country": "INDIA",
+                "state": "MP",
+                "city": "Indore",
+                "departments": [
+                    {
+                        "departmentName": "Sales11",
+                        "subDepartments": [
+                            {
+                                "subDepartmentName": "Market-Sale115"
+                            },
+                            {
+                                "subDepartmentName": "Market-Sales116"
+                            }
+                        ]
+                    }
+                ],
+                "officeId": 1
+            },
+            {
+                "officeName": "JaipurOffice",
+                "country": "INDIA",
+                "state": "RJ",
+                "city": "Jaipur",
+                "departments": [
+                    {
+                        "departmentName": "Sales30",
+                        "subDepartments": [
+                            {
+                                "subDepartmentName": "Market-Sale305"
+                            },
+                            {
+                                "subDepartmentName": "Market-Sales306"
+                            }
+                        ]
+                    }
+                ],
+                "officeId": 3
+            },
+            {
+                "officeName": "MAIN",
+                "country": "INDIA",
+                "state": "MP",
+                "city": "Indore",
+                "departments": [
+                    {
+                        "departmentName": "Sales20",
+                        "subDepartments": [
+                            {
+                                "subDepartmentName": "Market-Sale205"
+                            },
+                            {
+                                "subDepartmentName": "Market-Sales206"
+                            }
+                        ]
+                    }
+                ],
+                "officeId": 2
+            }
+        ],
+        "status": "active",
+        "organizationId": 2,
+        "createdDateTime": "2019-04-01T06:43:13.054+0000",
+        "updatedDateTime": "2019-04-05T10:34:06.353+0000"
+    },
+    "message": "Success",
+    "code": 200
+}

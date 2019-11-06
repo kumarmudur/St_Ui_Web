@@ -1,0 +1,52 @@
+.error {
+    // margin-left: 18px;
+    margin-top: 5px;
+    color: red;
+    font-size: 12px;
+}
+
+.bread-crumb {
+    margin: 15px 0 0 20px;
+
+    .icon {
+        font-size: 14px;
+        color: $silver_gray;
+    }
+
+    .middle-item {
+        color: $blue;
+        cursor: pointer;
+    }
+
+    .last-item {
+        color: $silver_gray
+    }
+}
+
+.user-management-bread-crumb {
+    margin: 15px 0 0 0;
+
+    .icon {
+        font-size: 14px;
+        color: $silver_gray;
+    }
+
+    .middle-item {
+        color: $blue;
+        cursor: pointer;
+    }
+
+    .last-item {
+        color: $silver_gray
+    }
+}
+
+input[class^="input-search"]:-webkit-autofill,
+input[class^="input-search"]:-webkit-autofill:hover, 
+input[class^="input-search"]:-webkit-autofill:focus
+{
+  border: 0 none;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

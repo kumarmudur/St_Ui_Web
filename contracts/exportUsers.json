@@ -1,0 +1,36 @@
+[{
+    "alternativePhone": "+14803707080",
+    "confirmEmail": "Kiran@google.com",
+    "confirmPassword": "King10@123",
+    "email": "Kiran@google.com",
+    "firstName": "Kiran",
+    "lastName": "Raj",
+    "phone": "+14803707080",
+    "password": "King10@123",
+    "status": "PENDING_FOR_VERIFICATION",
+    "originalPwd": "King10@123",
+    "secretHash": "1000:8060a8ba67a6951ce2c8b2623848ec556a22623b3894dae5:13306cb47dbba1195d0c9a07cb5e36ee8abe194b2744f2fe",
+    "inviteToken": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJzb2xhcnRvcHBzIiwiaWF0IjoxNTQ5ODY5MzQzLCJzdWIiOiJnZW5lcmF0ZS10b2tlbiIsImlzcyI6Ik5lYWwifQ.delbqqA5LngiZszsJbunD6SBPjosQkTeCl3FIFX1p8U",
+    "systemToken": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJzb2xhcnRvcHBzIiwiaWF0IjoxNTQ5ODY5MzQzLCJzdWIiOiJnZW5lcmF0ZS10b2tlbiIsImlzcyI6Ik5lYWwifQ.delbqqA5LngiZszsJbunD6SBPjosQkTeCl3FIFX1p8U",
+    "userName": "Kiran@google.com",
+    "registerId": 100
+},
+{
+    "alternativePhone": "",
+    "confirmEmail": "XKiran@google.com",
+    "confirmPassword": "King10@123",
+    "email": "XKiran@google.com",
+    "firstName": "Kiran",
+    "lastName": "Raj",
+    "phone": "+19756765756",
+    "password": "King10@123",
+    "status": "PENDING_FOR_VERIFICATION",
+    "originalPwd": "King10@123",
+    "secretHash": "1000:6c9354bea169c34e489c59261c2c307450bb09857703ddfc:a33b47f244112fb04d2502e3e75e82ba2579b5d92936dd27",
+    "inviteToken": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJzb2xhcnRvcHBzIiwiaWF0IjoxNTQ5ODc2NDgzLCJzdWIiOiJnZW5lcmF0ZS10b2tlbiIsImlzcyI6Ik5lYWwifQ.l7PdIbpsu9AYXuq4eum5RDePl4BrLOXUtTF-0SY0y4k",
+    "systemToken": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJzb2xhcnRvcHBzIiwiaWF0IjoxNTQ5ODc2NDgzLCJzdWIiOiJnZW5lcmF0ZS10b2tlbiIsImlzcyI6Ik5lYWwifQ.l7PdIbpsu9AYXuq4eum5RDePl4BrLOXUtTF-0SY0y4k",
+    "userName": "XKiran@google.com",
+    "registerId": 101
+
+}
+]

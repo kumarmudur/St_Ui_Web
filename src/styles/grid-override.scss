@@ -1,0 +1,63 @@
+.grid-cell {
+	margin: 0px 0px 0px 1px;
+
+	height:23px !important;
+    box-sizing: border-box;
+	overflow: hidden;
+	//border: 1px solid #EFEFEF;
+	//background: #ffffff;
+    text-align:left;
+	display: inline-block;
+	padding: 8px 5px 5px 8px 
+}
+
+.grid-box {
+	font-size:12px;
+	font-family: Lato;
+	color: #000000;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	overflow-x: auto;
+	overflow-y: hidden;
+  position: relative;
+  height: 100%;
+  max-height: 3600px;
+}
+
+.grid-box-header {
+    position: sticky !important;
+    top: -1px;
+    // z-index: 999;
+    font-weight:bold;
+	display: block;
+	border-bottom: 2px solid #29856B;
+	background-color: #fff;
+	padding: 25px 0 10px 0;
+	
+	.head-cell {
+		padding-left: 10px !important;
+	}
+
+}
+
+.grid-body5 {
+	.grid-cell {
+		padding: 9px 4px 9px 4px;
+		margin: 0px 0px -4px 1px;
+		min-height: 40px !important;
+		.grid-cell-span {
+		   padding-left: 8px;
+		}
+	}
+}
+
+
+.grid-cell-span {
+	img {
+		margin: 5px 0% 0% 5px;
+    position: absolute;
+    cursor: pointer;
+    height: 12px;
+    width: auto;
+	}
+}

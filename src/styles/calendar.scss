@@ -1,0 +1,23 @@
+.form-group {
+
+    .react-datepicker-wrapper {
+
+        .react-datepicker__input-container {
+            width: 170% !important;
+            margin: 1px 0 0 0;
+        }
+    }
+
+    .react-datepicker-popper {
+        margin: 10px 12px !important;
+        z-index: 5 !important;
+    }
+
+}
+
+.product-date {
+    position: absolute;
+    top: 34px;
+    right: 35px;
+    cursor: pointer;
+}

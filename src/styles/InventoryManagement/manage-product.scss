@@ -1,0 +1,128 @@
+.container {
+    margin-top: 0px;
+    
+    .records{
+        text-align: right;
+        margin-top: -3%;
+        height: 40px;
+    }
+
+    .row-info {
+        width: 120px;
+        display: inline-block;
+        padding-right: 15px;
+        position: relative;
+        bottom: 5px;
+        vertical-align: bottom;
+    }
+    .page-options{
+        display: inline-block;
+        width: 110px;
+        text-align: left;
+        .show{
+            position: relative;
+            bottom: 5px;
+            padding-right: 10px;
+            vertical-align: bottom;
+        }
+        .page-ddb{
+            display: inline-block;
+
+            .Dropdown-control{
+                padding: 8px 28px 8px 5px;
+                height: 30px;
+                line-height: 15px;
+
+                .Dropdown-placeholder{
+                    margin-left: 8px;
+                }
+                .Dropdown-arrow{
+                    top: 12px;
+                }
+            }
+
+            
+        }
+    }
+    .filter{
+        display: inline-block;
+        width: 35px;
+        position: relative;
+        bottom: 7px;
+        right: 10px;
+        vertical-align: bottom;
+
+        .filterIcon {
+            cursor: pointer;
+            z-index: 1000;
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .clear-div {
+        clear: both;
+    }
+
+    
+
+    .row-container {
+
+        .inline-div {
+            position: absolute;
+            top: -4px;
+            right: 30px;
+
+            .show {
+                position: absolute;
+                top: 20px;
+                right: 70px;
+            }
+
+            .Dropdown-root {
+                position: relative;
+                top: 2px;
+                right: 5px;
+                width: 65%;
+                border-radius: 0;
+                margin: 0 0 12px 22px;
+                padding: 10px 0px 0px 0px;
+                display: inline-block;
+
+                .Dropdown-control {
+                    border: none;
+                    border-bottom: 1px solid $blue;
+                    border-radius: 0;
+                    padding: 8px 30px 2px 10px;
+
+                    .Dropdown-placeholder {
+                        margin-left: -5px;
+                    }
+                }
+
+                .Dropdown-menu {
+                    z-index: 1005;
+                }
+            }
+         }
+    }
+}
+
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    .records {
+        .row-info, .filter {
+            position: relative;
+            bottom: 10px;
+        }
+        .page-options{
+            .show{
+                position: relative;
+                bottom: 10px;
+            }
+        }
+
+    }
+}

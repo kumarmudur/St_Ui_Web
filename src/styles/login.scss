@@ -1,0 +1,126 @@
+.container {
+   
+    .wrap-input-item {
+        width: 36%;
+        margin: 0 auto;
+        // margin-left: 33%;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15); 
+        height: auto;
+        padding-bottom: 20px;
+        background-color: #ffffff;
+        padding-top: 10px;
+
+        .field-container {
+            width: 87.5%;
+            margin: 0 auto;
+            padding-top: 5px;
+            .input-item {
+                width: 100%;
+                position: relative;
+                padding: 0px 5px 0px 5px;
+
+                .error {
+                    color: $red;
+                    margin-left: 0;
+                    border: 1px solid #ffffff;
+                    font-size: 12px;
+                }
+            }
+            
+            @mixin elem-padding($padding) {
+                padding: $padding;
+            }
+            .input-label {
+                position: absolute;
+                top: 18px;
+                left: 5px;
+            }
+
+            .btn-group-footer {
+                @include elem-padding(15px 4px 5px 5px);
+            }
+
+            .form-input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #A6D4C7;
+                outline: none;
+                //margin-bottom: 5px;
+                padding: 20px 10px 14px 30px;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid $dark_green;
+                }
+            }
+
+            .input-remember {
+                margin-top: 10px;
+
+                input[type=checkbox] {
+                    width: 15px;
+                    height: 17px;
+                }
+                
+                .checkbox-label {
+                        padding-right: 5px;
+                        margin-left: 5px;
+                        vertical-align: text-top;
+                        color: #555555;
+                }
+
+                a {
+                    float: right;
+                    margin-right: 5px;
+                    color: $red;
+                }
+            }
+
+            .input-newuser {
+                margin-left: 5px;
+                margin-top: 25px;
+
+                a {
+                    color: $blue;
+                }
+
+                span {
+                    color: #555555;
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+    .verify-user {
+        .verify-status-wrapper {
+            padding-top: 15px;
+            .activated {
+                color: #29856B;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .text-content {
+                font-size: 14px;
+                color: #555;
+
+                .resend-email {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    .activate-user {
+        .activated {
+            border-bottom: 1px solid #e5e5e5;
+            color: #29856B;
+            font-size: 18px;
+            padding: 10px 10px 10px 20px;
+        }
+    }
+}
+
+.wrapper-main{
+    background-color: #f4f4f4;
+    height: 94vh;;
+}

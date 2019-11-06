@@ -1,0 +1,129 @@
+.container {
+
+    .wrapper-section { 
+        width: 97%;
+        margin-top: 3%;
+        height: auto;
+        background-color: $white;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15); 
+        position: relative;
+
+        @mixin row {
+            .row {
+                width: 100%;
+
+                .wrapper {
+                    display: inline-block;
+                    position: relative;
+                    width: 33%;
+                    padding: 0 30px 0 0;
+
+                    input {
+                        border:none;
+                        border-bottom:1px solid $light_green_border;
+                        outline:none;
+                        padding: 30px 10px 4px 5px;
+                        margin-left: 12px;
+                        width: 97%;
+        
+                        &:focus,
+                        &:active {
+                            border-bottom: 2px solid $dark_green;
+                        }
+                    }
+
+                    .error {
+                        margin: 0 0 0 12px;
+                    }
+
+                    .radio-input {
+                        border-bottom:1px solid $border_bottom;
+                        padding: 33px 10px 1px 5px;
+                    }
+        
+                }
+    
+                .inline-div {
+                    display: inline-block;
+                    width: 33.33%;
+                    position: relative;
+                    padding: 0 30px 0 0;
+    
+                    @include floating-label(14px);
+
+                    .Dropdown-root {
+                        position: relative;
+                        top: 17px;
+                        width: 95%;
+                        border-radius: 0;
+                        margin: 0 0 12px 12px;
+                        padding: 10px 0px 0px 0px;
+                        display: inline-block;
+    
+                        .Dropdown-control {
+                            border: none;
+                            border-bottom: 1px solid $light_green_border;
+                            border-radius: 0;
+                            padding: 6px 52px 0 10px;
+    
+                            .Dropdown-placeholder {
+                                margin-left: -5px;
+                            }
+                        }
+                    }
+
+                    .error {
+                        margin: 5px 0 0 12px;
+                        font-size: 12px;
+                    }
+
+                 }
+            }
+        }
+
+        @mixin borderBottomStyle {
+            border-bottom: 1px solid $silver_gray;
+            padding: 0 0 15px 0;
+        }
+
+        .wapper-common {
+            @include borderBottomStyle();
+            @include row();
+        }
+
+        .wrapper-dynamic {
+            @include row();
+
+            .percentage {
+                position: absolute;
+                top: 30px;
+                right: 32px;
+            }
+
+            .checkbox-div {
+               @include borderBottomStyle();
+
+               .row-checkbox {
+                  margin: 45px 0 15px 12px;
+               }
+            }
+
+            .row-radio {
+                margin: 15px 0 0 12px;
+                position: absolute;
+                top: 18px;
+                right: 25px;
+    
+                .radio-label {
+                    margin: 0 18px 0 0;
+                }
+    
+                .radio-text {
+                    margin: 0 3px 0 0;
+                }
+            }
+
+
+        }
+    }
+}

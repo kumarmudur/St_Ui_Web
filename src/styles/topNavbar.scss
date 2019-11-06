@@ -1,0 +1,74 @@
+.top-navbar {
+
+    .toggle-sidebar {
+        font-size: 25px;
+        cursor: pointer;
+        color: $white;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    
+
+    .title {
+        position: absolute;
+        top: 17px;
+        left: 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .topnavbar {
+        position: relative;
+        height: 62px;
+    }
+
+
+    .group-element {
+        // margin-left: 32%;
+        text-align: right;
+        // position: relative;
+        // right: 30px;
+        // top: 6px;
+        left: 13%;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        .search-main {
+            display:inline-block;
+            width: 47%;
+            position: relative;
+        }
+        .buttons-main {
+            display:inline-block;
+            width: 36%;
+        }
+        .loggedInUser {
+            display:inline-block;
+            // width: 16%;
+        }
+        .image-close {
+            position: absolute;
+            // left: 37%;
+            top: 40%;
+            right: 41%;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .image-search {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,35 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './colors.scss';
+@import './mediaQuery.scss';
+@import './main.scss';
+@import './navbar.scss';
+@import './register.scss';
+@import './button.scss';
+@import './footer.scss';
+@import './input.scss';
+@import './floating-label.scss';
+@import './image.scss';
+@import './login.scss';
+@import './forgotPassword.scss';
+@import './checkbox.scss';
+@import './modal.scss';
+@import './addUser.scss';
+@import './navigation.scss';
+@import './topNavbar.scss';
+@import './dropdown.scss';
+@import './common.scss';
+@import './addRole.scss';
+@import './organization.scss';
+@import './addBulkImport.scss';
+@import './users.scss';
+@import './profile.scss';
+@import './tooltip.scss';
+@import './calendar.scss';
+@import './no-record.scss';
+
+// INVENTORY MANAGEMENT
+@import './InventoryManagement/index.scss';
+
+// PURCHASE PLAN
+@import './PurchasePlan/index.scss';
+

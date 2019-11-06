@@ -1,0 +1,627 @@
+{
+    "roles": [
+        {
+            "roleName": "rr",
+            "roleDiscription": "rrrr",
+            "modules": [
+                {
+                    "moduleName": "User Management",
+                    "features": [
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": true
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Users"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": true
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Bulk Import"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Role"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Group"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Organization Tree"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Configure Profile Fields"
+                        }
+                    ]
+                },
+                {
+                    "moduleName": "Manage Projects",
+                    "features": []
+                },
+                {
+                    "moduleName": "Manage Inventory",
+                    "features": []
+                },
+                {
+                    "moduleName": "Manage Cost",
+                    "features": []
+                },
+                {
+                    "moduleName": "Reports",
+                    "features": []
+                },
+                {
+                    "moduleName": "Manage Sales",
+                    "features": []
+                },
+                {
+                    "moduleName": "System Configuration",
+                    "features": []
+                }
+            ],
+            "authToken": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJzb2xhcnRvcHBzIiwiaWF0IjoxNTUxNzgxNjE5LCJzdWIiOiJnZW5lcmF0ZS10b2tlbiIsImlzcyI6Ik5lYWwifQ.IbCMRgBD_CeJXnYjNl88juPiopyzhwTYZfUtJ4Rup42",
+            "status": "Active",
+            "manageRolesId": 110,
+            "createdDateTime": "2019-03-15T12:02:38.951+0000",
+            "updatedDateTime": "2019-03-15T12:02:38.951+0000",
+            "score": 1.1
+        },
+        {
+            "roleName": "rr",
+            "roleDiscription": "rrrr",
+            "modules": [
+                {
+                    "moduleName": "User Management",
+                    "features": [
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": true
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Users"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": true
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Bulk Import"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Role"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Group"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Manage Organization Tree"
+                        },
+                        {
+                            "permissions": [
+                                {
+                                    "fieldName": "add",
+                                    "fieldValue": "ADD",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "edit",
+                                    "fieldValue": "EDIT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "delete",
+                                    "fieldValue": "DELETE",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "view",
+                                    "fieldValue": "VIEW",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "import",
+                                    "fieldValue": "IMPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "export",
+                                    "fieldValue": "EXPORT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "print",
+                                    "fieldValue": "PRINT",
+                                    "displayValue": false
+                                },
+                                {
+                                    "fieldName": "email",
+                                    "fieldValue": "EMAIL",
+                                    "displayValue": false
+                                }
+                            ],
+                            "featureName": "Configure Profile Fields"
+                        }
+                    ]
+                },
+                {
+                    "moduleName": "Manage Projects",
+                    "features": []
+                },
+                {
+                    "moduleName": "Manage Inventory",
+                    "features": []
+                },
+                {
+                    "moduleName": "Manage Cost",
+                    "features": []
+                },
+                {
+                    "moduleName": "Reports",
+                    "features": []
+                },
+                {
+                    "moduleName": "Manage Sales",
+                    "features": []
+                },
+                {
+                    "moduleName": "System Configuration",
+                    "features": []
+                }
+            ],
+            "authToken": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJzb2xhcnRvcHBzIiwiaWF0IjoxNTUxNzgxNjE5LCJzdWIiOiJnZW5lcmF0ZS10b2tlbiIsImlzcyI6Ik5lYWwifQ.IbCMRgBD_CeJXnYjNl88juPiopyzhwTYZfUtJ4Rup42",
+            "status": "Active",
+            "manageRolesId": 111,
+            "createdDateTime": "2019-03-15T12:02:38.955+0000",
+            "updatedDateTime": "2019-03-15T12:02:38.955+0000",
+            "score": 1.1
+        }
+    ],
+    "code": 200
+}

@@ -1,0 +1,17 @@
+const PURCHASE_PLAN_API = '/internal-api/purchasePlan';
+const INTERNALAPI = {
+    //GET METHODS
+    GET_PURCHASE_PLAN_LIST: `${PURCHASE_PLAN_API}/purchasePlanList`,
+    GET_STATIC_DATA_PURCHASE_PLAN: `${PURCHASE_PLAN_API}/staticDataPurchasePlan`,
+    GET_PURCHASE_PLAN_DATA: `${PURCHASE_PLAN_API}/purchasePlanData`,
+    GET_STATIC_DATA_CONFIG: `${PURCHASE_PLAN_API}/staticDataConfig`,
+
+    //POST METHODS
+    POST_SEARCH_PURCHASE_PLAN: `${PURCHASE_PLAN_API}/searchPurchasePlan`,
+    POST_FILTER_PURCHASE_PLAN: `${PURCHASE_PLAN_API}/filterPurchasePlan`,
+    POST_DELETE_PURCHASE_PLAN: `${PURCHASE_PLAN_API}/deletePurchasePlan`,
+    POST_ADD_PURCHASE_PLAN: `${PURCHASE_PLAN_API}/addPurchasePlan`,
+    POST_EDIT_PURCHASE_PLAN: `${PURCHASE_PLAN_API}/editPurchasePlan`
+};
+
+export default INTERNALAPI;

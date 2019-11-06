@@ -1,0 +1,99 @@
+.main-wrapper {
+    padding: 10px;
+    margin: 10px 0;
+    .download-file {
+        width: 100%;
+        text-align: right;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+    .file-upload {
+        border: 1px solid #e9e9e9;
+        width: 100%; 
+        height: auto;
+        padding: 15px 0 15px 0;   
+        cursor: pointer;
+        .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+            .btn-wrapper {
+                padding: 7px 10px;
+                line-height: 30px;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+                display: block;
+
+                .btn {
+                    color: gray;
+                    background-color: transparent;
+                    font-size: 12px;
+                    border: 0 none;
+                    padding: 0;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+
+                    img {
+                        vertical-align: text-bottom;
+                        margin-right: 5px;
+                    }
+                    .upload-text {
+                        font-size: 14px;
+                        color: #555;
+                    }
+                    .upload-size-text {
+                        font-size: 12px;
+                        color: #999;
+                    }
+                }
+            }
+            input[type=file] {
+                font-size: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                cursor: pointer;
+            }    
+        }
+        .uploaded-file {
+            width: 100%;
+            height: 50px;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+
+            .file-name {
+                display: inline-block;
+                margin-right: 35px;
+                vertical-align: middle;
+            }
+            .delete {
+                position: relative;
+                margin-right: 4px;
+                cursor: pointer;
+                display: inline-block;
+            }
+        }
+    }
+    .upload-csvfile {
+        text-align: center;
+        width: 95%;
+    }
+    .download-tag {
+        img {
+            vertical-align: top;
+        }
+    }
+    .error {
+        position: relative;
+        top: 5px; 
+    }
+}

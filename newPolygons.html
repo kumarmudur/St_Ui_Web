@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple Polygon</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+		var X = [];
+		var Y = [];
+		var firstPolygon = null;
+		
+      // This example creates a simple polygon representing the Bermuda Triangle.
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: {lat: 12.973481, lng: 77.617235},
+          mapTypeId: 'satellite',
+		  zoom: 120
+        });
+		
+		
+		google.maps.Polygon.prototype.Contains = function (point) {
+			var crossings = 0,
+				path = this.getPath();
+
+			// for each edge
+			for (var i = 0; i < path.getLength(); i++) {
+				var a = path.getAt(i),
+					j = i + 1;
+				if (j >= path.getLength()) {
+					j = 0;
+				}
+				var b = path.getAt(j);
+				if (point && a && b && rayCrossesSegment(point, a, b)) {
+					crossings++;
+				}
+			}
+
+			// odd number of crossings?
+			return (crossings % 2 == 1);
+
+			function rayCrossesSegment(point, a, b) {
+				var px = point.lng(),
+					py = point.lat(),
+					ax = a.lng(),
+					ay = a.lat(),
+					bx = b.lng(),
+					by = b.lat();
+				if (ay > by) {
+					ax = b.lng();
+					ay = b.lat();
+					bx = a.lng();
+					by = a.lat();
+				}
+				// alter longitude to cater for 180 degree crossings
+				if (px < 0) {
+					px += 360;
+				}
+				if (ax < 0) {
+					ax += 360;
+				}
+				if (bx < 0) {
+					bx += 360;
+				}
+
+				if (py == ay || py == by) py += 0.00000001;
+				if ((py > by || py < ay) || (px > Math.max(ax, bx))) return false;
+				if (px < Math.min(ax, bx)) return true;
+
+				var red = (ax != bx) ? ((by - ay) / (bx - ax)) : Infinity;
+				var blue = (ax != px) ? ((py - ay) / (px - ax)) : Infinity;
+				return (blue >= red);
+
+			}
+
+		};
+		
+		var drawingManager = new google.maps.drawing.DrawingManager({
+          drawingMode: google.maps.drawing.OverlayType.POLYGON,
+          drawingControl: true,
+          drawingControlOptions: {
+            position: google.maps.ControlPosition.TOP_CENTER,
+            drawingModes: ['polygon']
+          },
+		  polygonOptions: {
+			geodesic: true
+		  }
+        });
+        drawingManager.setMap(map);
+		
+		google.maps.event.addListener(drawingManager, 'polygoncomplete', function(polygon){
+			
+			if(firstPolygon){
+				var index;
+				var isWithin = false;
+				var vertices = polygon.getPath();
+				var p;
+				for(p=0; p<vertices.length; p ++){
+					var point = vertices.getAt(p);
+					isWithin = firstPolygon.Contains(point);
+					if(!isWithin){
+						break;
+					}
+				}
+				if(isWithin) {
+					console.log('Polygon is within the bounds');
+				} else{
+					polygon.setMap(null);
+				}
+			} else {
+				firstPolygon = polygon;
+			}
+			
+		});
+		
+      }
+	  
+	
+	
+	
+	function area(lats, lons)
+{       
+    var sum=0;
+    var prevcolat=0;
+    var prevaz=0;
+    var colat0=0;
+    var az0=0;
+	var i;
+    for (i=0;i<lats.length;i++)
+    {
+        var colat=2*Math.atan2(Math.sqrt(Math.pow(Math.sin(lats[i]*Math.PI/180/2), 2)+ Math.cos(lats[i]*Math.PI/180)*Math.pow(Math.sin(lons[i]*Math.PI/180/2), 2)),Math.sqrt(1-  Math.pow(Math.sin(lats[i]*Math.PI/180/2), 2)- Math.cos(lats[i]*Math.PI/180)*Math.pow(Math.sin(lons[i]*Math.PI/180/2), 2)));
+        var az=0;
+        if (lats[i]>=90)
+        {
+            az=0;
+        }
+        else if (lats[i]<=-90)
+        {
+            az=Math.PI;
+        }
+        else
+        {
+            az=Math.atan2(Math.cos(lats[i]*Math.PI/180) * Math.sin(lons[i]*Math.PI/180),Math.sin(lats[i]*Math.PI/180))% (2*Math.PI);
+        }
+        if(i==0)
+        {
+             colat0=colat;
+             az0=az;
+        }           
+        if(i>0 && i<lats.length)
+        {
+            sum=sum+(1-Math.cos(prevcolat  + (colat-prevcolat)/2))*Math.PI*((Math.abs(az-prevaz)/Math.PI)-2*Math.ceil(((Math.abs(az-prevaz)/Math.PI)-1)/2))* Math.sign(az-prevaz);
+        }
+        prevcolat=colat;
+        prevaz=az;
+    }
+    sum=sum+(1-Math.cos(prevcolat  + (colat0-prevcolat)/2))*(az0-prevaz);
+    return 5.10072E14* Math.min(Math.abs(sum)/4/Math.PI,1-Math.abs(sum)/4/Math.PI);
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMRinBN5DcVt1q_Zga_2eREM1HMfrciuU&libraries=drawing,geometry&callback=initMap">
+    </script>
+  </body>
+</html>

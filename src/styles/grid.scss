@@ -1,0 +1,130 @@
+.grid-body5 {
+	.row {
+		:hover {
+			background-color: #EEF5FC;
+		}
+	}
+	.oddRow { 
+		background-color: #ffffff;
+	}
+	.evenRow { 
+		background-color: #f7f7f7;
+	}
+
+}
+
+
+.grid-box {
+	font-size:12px;
+	font-family: Lato;
+	color: #000000;
+	box-sizing: border-box;
+	border: 1px solid #ececec;
+	overflow: scroll;
+	position: relative;
+  height: 85%;
+  max-height: 650px;
+}
+.grid-box-header {
+    position: sticky !important;
+    top: -1px;
+    // z-index: 999;
+    font-weight:bold;
+	display: block;
+	border-bottom: 2px solid #29856B;
+	background-color: #fff;
+	padding: 15px 0 10px 0;
+
+}
+.grid-area {
+	position: relative;
+}
+.grid-vline {
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background: #EFEFEF;
+	overflow: hidden;
+	cursor: ew-resize;
+}
+.grid-hline {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #000;
+	overflow: hidden;
+	cursor: ns-resize;
+}
+.grid-cell {
+	height:23px !important;
+    box-sizing: border-box;
+    padding:5px;
+	//position: absolute;
+	overflow: hidden;
+	//border: 1px solid #EFEFEF;
+	//background: #ffffff;
+    text-align:left;
+	display: inline-block;
+	
+	//    padding: 8px 5px 5px 8px // todo change
+}
+
+.grid-cell-span-links {
+	padding: 0px;
+	min-width: 200px;
+	display: inline-block;
+	text-transform: capitalize;
+	
+	img {
+		margin: -2% 1% 0% 5%;
+		width: 20px;
+		height: 20px;
+	}
+	a {
+		cursor: pointer;
+	}
+}
+
+.grid-cell-span {
+	padding: 0px;
+	display: inline-block;
+  text-transform: capitalize;
+  
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+	
+	img {
+		margin: 5% 0% 0% 5%;
+	}
+	a {
+		cursor: pointer;
+	}
+}
+
+.grid-rpane-hd {
+	overflow: hidden;
+}
+.grid-rpane-bd {
+	overflow: scroll;
+}
+
+
+.grid-box-button {
+	display: block;
+	width: 100px;
+	border: 1px solid #900;
+}
+.grid-box-button-hidden {
+	display:none;
+}
+
+.grid-link {
+	cursor: pointer;
+	/* margin-right:5px; */
+	/* margin-left: 10px; */
+}
+.head-cell {
+	height: 10px;
+	margin-left: 5px;
+}

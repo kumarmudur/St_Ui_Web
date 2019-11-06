@@ -1,0 +1,862 @@
+@import './Mixins/common.scss';
+
+$line-height: 11px;
+@mixin textColor($color) {
+    color: $color;
+}
+.container {
+    .logo-wrapper {
+        height: 88px;
+        display: block;
+        .loggedIn-user {
+            position: relative;
+            cursor: pointer;
+            right: 0;
+            width: 21%;
+            float: right;
+            top: 47%;
+            text-align: right;
+            span {
+                color: $dark_green;
+                img {
+                    margin-right: 7px;
+                }
+            }
+            .topNavMenu {
+                display: none;
+                background-color: #ffffff;
+                border: 1px solid #e5e5e5;
+                border-collapse: collapse;
+              }
+              img {
+                margin: 2px 5px 0px 0px;
+              }
+                text-transform: capitalize;
+                color: #ffffff;
+                height: 28px;
+                width: auto;
+                display: inline-block;
+                margin-left: 8px;
+                vertical-align: middle;
+                text-align: left;
+            
+                &:hover .topNavMenu {
+                  display: block;
+                  position: absolute;
+                  z-index: 999;
+                }
+                .topNavMenuLinks {
+                  padding: 3% 0% 0% 17%;
+                  display: block !important;
+                  color: #666666;
+                  height: 27px;
+                  width: 125px;
+                  text-transform: capitalize;
+            
+                  &:hover {
+                    text-decoration: none;
+                  }
+            }
+        }
+    }
+    .wrapper-user {
+        background-color: #f5f5f5;
+        padding: 10px 20px 10px 20px;
+        .clear {
+            clear:both;
+        }
+    }
+    .row-heading {
+        margin-top: 10px;
+        clear: both;
+        .heading-generalInfo, .heading-documents, .heading-agreement {
+            min-width: 14%;
+            border: none;
+            float: left;
+            padding: 12px 12px 12px 0;
+            margin-right: 5px;
+            text-align: center;
+            cursor: pointer;
+
+            .inactive-tabText {
+                @include textColor(#cccccc)
+            }
+
+            .activeTab {
+                color: #318DE9;
+            }
+
+            .processed {
+                color: #212529;
+            }
+
+            p {
+                height: 30px;
+                border: 1px solid #eeeeee;
+                vertical-align: middle;
+                line-height: 26px;
+                background-color: #ffffff;
+                border-radius: 15px;
+                margin-bottom: 0px;
+
+                .checkMark-green {
+                    background: #FFFFFF url(/icons/check-circle-green.png) no-repeat right center;
+                    width: 17px;
+                    height: 17px;
+                    padding: 4px 10px 5px 10px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+
+                .checkMark-gray {
+                    background: #FFFFFF url(/icons/check-circle.png) no-repeat right center;
+                    width: 17px;
+                    height: 17px;
+                    padding: 4px 10px 5px 10px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .user-status-message {
+            float: right;
+            min-width: 35%;
+            padding: 12px;
+            text-align: right;
+
+            p {
+                height: 30px;
+                vertical-align: middle;
+                line-height: 26px;
+                margin-bottom: 0px;
+                color: $dark_green;
+                font-size: 14px;
+                .rejected {
+                    color:red;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+    .content {
+        width:100%;
+        background-color: white;
+        margin-top: 20px;
+        padding: 0 20px 0 20px;
+
+        .border-separator {
+            border-bottom: 1px solid #e1e1e1;
+            padding-bottom: 20px !important;
+            margin-bottom: 15px !important;
+        }
+
+        @mixin align-text($alignType) {
+            text-align: $alignType;
+        }
+
+        @mixin element-padding($top, $bottom) {
+            padding: $top 0 $bottom 0 !important;
+        }
+
+        .text-alignment {
+            @include align-text(right)
+        }
+
+        .field-padding {
+            @include element-padding(10px, 10px);
+        }
+        .agreement-content-style {
+            min-height: 100px;
+            padding-top: 10px;
+            p {
+                font-size: 14px;
+            }
+        }
+        .row-padding {
+            padding-bottom: 20px !important;
+        }
+        .row {
+            display: block;
+            padding: 0;
+            .file-error {
+                margin-left: 10px;
+                color: red;
+                font-size: 12px;
+            }
+            .print-agreement {
+                color: #FFFFFF;
+                padding: 5px 0px 5px 0;
+                text-decoration: none;
+            }
+            .fieldset-spacing {
+                padding: 10px 25px 10px 0;
+            }
+            .cols {
+                display: inline-grid;
+                width:25%;
+                // padding: 10px;
+                padding: 0px 10px 0px 10px;
+                word-break: break-word;
+
+                .phone-constant-readonly {
+                    color: #C0C0C0;
+                    margin-right: 3px;
+                }
+                .attachment {
+                    background: #FFFFFF url(/icons/attachment.png) no-repeat right center;
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px 10px 5px 10px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+
+                .user-info-edit-page {
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid $light_green_border;
+                    padding: 0 25px 5px 0;
+                    border-collapse: collapse;
+                    cursor: not-allowed;
+                    .form-label {
+                        display: block;
+                        padding-left: 5px;
+                    }
+                    .form-label-text {
+                        display: block;
+                        padding-left: 5px;
+                    }       
+                }    
+                .user-info-details {
+                    border-bottom: 1px solid #e8e8e8;
+                    padding-bottom: 5px;
+                    border-collapse: collapse;
+                    
+                    .verified {
+                        color: #257760;
+                        float: right;
+                        font-size: 14px;
+                    }
+                    .verifiy {
+                        color: red;
+                        float: right;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .readonly-field-style {
+                vertical-align: top;
+                cursor: not-allowed;
+                .form-label {
+                    margin-top: 15px;
+                    padding: 0;
+                }
+                .form-label-text {
+                    border-bottom: 1px solid $light_green_border;
+                    padding: 0px 0 4px 0;
+                    border-collapse: collapse;
+                }
+            }
+            .heading-company {
+                padding: 25px 0 0 10px !important;
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+            .radio-btn-group {
+                padding-left: 10px;
+            }
+
+            .cols-left-spacing {
+                padding-left: 0px;
+            }
+
+            .document-comments {
+                color: $dark_green;
+                font-size: 14px;
+                padding-top: 10px;
+                margin-left: 10px;
+                padding-bottom: 20px;
+
+                .comments-body {
+                    color: #000000;
+                    margin-left:10px;
+                }
+            }
+            .esign-content {
+                p {
+                    padding: 10px;
+                }
+            }
+            .inlineBlock {
+                display: inline-block;
+            }
+            .document-grid {
+                border: 1px solid #CCCCCC;
+                background-color: #F8F8F8;
+                width: 100%;
+                text-align: left;
+                border-collapse: collapse;
+                display: table;
+                
+                .document-grid-cell, .document-grid-head {
+                  border: 0px solid #E5E5E5;
+                  padding: 3px 4px;
+                }
+                .document-grid-heading {
+                  background: #FFFFFF;
+                  border-bottom: 2px solid $dark_green;
+                  display: table-header-group;
+                  .document-grid-row {
+                      display: table-row;
+                      .document-grid-head {
+                        padding: 9px 4px 9px 15px;			
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #333333;
+                        text-align: left;
+                        border-left: 1px solid #e0e0e0;
+                        display: table-cell;
+                        
+                        &:first-child {
+                            border-left: none;
+                        }
+                      }
+                  }
+                }
+                .document-grid-body {
+                  display: table-row-group;
+                  .document-grid-row {
+                      display: table-row;
+                      &:nth-child(odd) {
+                          background: #FFFFFF;
+                      }
+                      .document-col-width {
+                          width: 15%;
+                          vertical-align: top;
+                      }
+                      .attachment-col-width {
+                        width: 55%;
+                        vertical-align: top;
+                      }
+                      .lastupdated-col-width {
+                            width: 15%;
+                            vertical-align: top;
+                      }
+                      .status-col-width {
+                        width: 15%;
+                        vertical-align: top;
+                      }
+                      .document-grid-cell {
+                          font-size: 14px;
+                          border-right: 1px solid #e0e0e0;
+                          padding: 6px 4px 6px 15px;
+                          display: table-cell;
+                          vertical-align: middle;
+                          
+                          div {
+                            vertical-align: top;
+                          }
+                          .attachment {
+                            background: transparent url(/icons/attachment.png) no-repeat right center;
+                            width: 20px;
+                            height: 20px;
+                            padding: 5px 10px 5px 10px;
+                            margin-right: 5px;
+                            vertical-align: middle;
+                          }
+                          .invalid-upload {
+                              color: red;
+                          }
+                          .grid-cell-left {
+                              display: inline-block;
+                              line-height: 30px;
+                              padding-top: 12px;
+                          }
+                          .grid-cell-right {
+                            display: inline-block;
+                        }
+                        .fileupload-col-width {
+                            padding: 0 4px 0 0;
+                            min-width: 250px;
+                        }
+                      }
+                  }
+                }
+            }
+
+            .commentbox-wrapper {
+                background-color: #f5f5f5;
+                display: block;
+                padding: 10px 10px 0 10px;
+                margin-bottom: 2%;    
+                h4 {
+                    color: $dark_green;
+                    font-size: 16px;
+                    width: 98%;
+                    margin: 0 auto;
+                }
+                .header-text {
+                    cursor: pointer;
+                    padding: 3px 0px 13px 0px;
+                    
+                    .up-arrow {
+                        content: url(/icons/down-arrow-green.png);
+                        transform: rotate(-180deg);
+                        background-repeat: no-repeat;
+                        margin-right: 5px;
+                    }
+            
+                    .image-style {
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+            
+                    .down-arrow {
+                        content: url(/icons/down-arrow-green.png);
+                        background-repeat: no-repeat;
+                        margin-right: 5px;
+                    }
+                }
+                .message-block {
+                    padding: 0px 10px 10px 10px;
+                    .comment-wrapper {
+                        border-top:1px solid #ccc;
+                        padding: 2px;
+                        padding: 10px 2px 5px 2px;
+                        color: #000;
+
+                        .comment-image {
+                            width: 16px;
+                            height: 15px;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                        }
+                        .comment-text {
+                            font-size: 14px;
+                            vertical-align: text-bottom;
+                        }
+                        .comment-date {
+                            color: #aeaeae;
+                            font-size: 11px;
+                            margin-left: 25px;
+                        }
+                        .comment-time {
+                            color: #aeaeae;
+                            font-size: 11px;
+                            margin-left: 8px;
+                        }
+
+                        &:last-child {
+                            border-bottom: 0 none; 
+                        }
+                    }
+                }
+                .hide-commentbox {
+                    display: none;
+                }
+            
+                .show-commentbox {
+                    display: block;
+                }
+                
+            }
+
+            @mixin formContentStyle($textSize, $textColor) {
+                font-size: $textSize;
+                color: $textColor;
+            }
+
+            @mixin fieldStyle($vAlign, $width) {
+                vertical-align: $vAlign;
+                width: $width;
+            }
+
+            .customWidth {
+                @include fieldStyle(top, 98%);
+                padding: 10px 5px 10px 0 !important;
+            }
+
+            .fileupload-col-width {
+                @include fieldStyle(initial, auto);
+                display: inline-block;
+            }
+
+            .heading-viewProfile {
+                width: 90%;
+                padding: 10px;
+                text-align: left;
+                font-weight: bold;
+                color: #555555;
+            }
+
+            .heading-tabs {
+                width: 50%;
+                text-align: left;
+                color: $dark_green;
+                font-size: 18px;
+            }
+
+            .agreement-buttonGroup {
+                padding: 10px;
+                text-align: right;
+                height: 50px;
+
+                .esign {
+                    text-align: left;
+                    font-weight: bold;
+                }
+                a {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    margin-right: 10px;
+                    text-decoration: none;
+                }
+            }
+
+            .docupload {
+                border: 1px solid #ccc;   
+                .disable-upload {
+                    pointer-events: none;
+                } 
+                .upload-btn-wrapper {
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+                    vertical-align: top;
+                    cursor: pointer;
+
+                    .btn-wrapper {
+                        padding: 7px 10px;
+                        line-height: 30px;
+                        cursor: pointer;
+                        .btn {
+                            color: gray;
+                            background-color: transparent;
+                            font-size: 12px;
+                            border: 0 none;
+                            padding: 0;
+
+                            img {
+                                vertical-align: text-bottom;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    input[type=file] {
+                        font-size: 100px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        opacity: 0;
+                        cursor: pointer;
+                    }    
+                    
+                }
+                .delete {
+                    top: 5px;
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 4px;
+                    cursor: pointer;
+                }
+            }    
+
+            .radio-btn-group {
+                input {
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+                span {
+                    margin-right: 10px;  
+                }
+            }
+            .imgEditProfile {
+                text-align: right;
+                margin-right: 10px;
+            }
+
+            .input-wrapper {
+                display: inline-block;
+                width: 100%;
+                padding-right: 25px;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid $light_green_border;
+                    outline: none;
+                    // padding: 0px 10px 5px 5px;
+                    // padding: 26px 10px 10px 5px;
+                    padding: 33px 10px 4px 5px;
+                    margin-left: 12px;
+                    width: 100%;
+                    color: #555555;
+                    font-size: 14px;
+
+                    &:focus,
+                    &:active {
+                        border-bottom: 2px solid $dark_green;
+                    }
+                    &:focus + span {
+                        color: $dark_green;
+                    }
+                }
+                @include floating-label(17px);
+                .form-input {
+                    span {
+                        color: $light_black;
+                    }
+    
+                    &:focus + span {
+                        color: $dark_green;
+                    }
+                }
+
+                .input-contact-person {
+                    padding-top:0;
+                }
+                .form-label {
+                    margin-left: 4px;
+                }
+                .floating-label { 
+                    position: relative;
+                    right: 12px;
+                }
+            }
+
+           .btn-group-footer {
+                display: flex;
+                justify-content: flex-end;
+                margin: 30px 0 0 0;
+                padding-bottom: 10px;
+
+                .btn-cancel {
+                    line-height: $line-height;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .profileColumStyle {
+                @include fieldStyle(text-bottom, auto);
+
+                img {
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    width: 156px;
+                    height: 156px;
+                }
+                .image-upload {
+                    display: inline-block;
+                    position: absolute;
+                    overflow: hidden;
+                    width: 14%;
+                    height: auto;
+                    top: 15%;
+                    left: 5%;
+
+                    .file-content {
+                        height: 142px;
+                        width: 156px;
+                        input[type=file] {
+                            font-size: 100px;
+                            position: absolute;
+                            left: 2%;
+                            top: 0;
+                            opacity: 0;
+                            width: 145px;
+                            height: 140px;
+                            -webkit-border-radius: 35%;
+                            -moz-border-radius: 35%;
+                            border-radius: 35%;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .image-error {
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+
+                .other-user {
+                    top:16%;
+                    height: auto;
+                    left: 5%;
+                }
+
+                .profile-loading {
+                    position: absolute;
+                }
+            }
+            .fieldColumnStyle {
+                @include fieldStyle(text-bottom, 35%);
+
+                .user-contactinfo {
+                    margin-top: 31%;
+                }
+            }
+
+            .form-label {
+                @include formContentStyle(12px, #999999);
+                padding-bottom: 3px;
+            }
+
+            .form-label-text {
+                @include formContentStyle(14px, #555555)
+            }
+
+            .profileName {
+                @include formContentStyle(16px, #29856b);
+                font-weight: bold;
+                .text-user-type {
+                    font-weight: normal;
+                    color: #555;
+                    font-size: 14px;
+                }
+            }
+
+            .list-item-delete {
+                // padding: 10px 0 10px 0;
+                padding: 2px 0 13px 0 !important;
+                vertical-align: bottom;
+                .input-label {
+                    // margin-top: 18px;
+                    vertical-align: top;
+                }
+            }
+
+            .clear {
+                clear: both;
+            }
+
+            .clear-margin {
+                margin-bottom: 0px !important;
+            }
+            .btn-group-footer {
+                button {
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .grid-space {
+            padding: 0 20px 0 10px;
+        }
+        .phone-constant {
+            position: absolute;
+            margin-right: 17%;
+            margin-top: 1%;
+            right: 32%;
+            color: $silver_gray;
+            z-index: 1;
+        }
+        .phone-constant-generalInfo {
+            position: absolute;
+            margin-right: 16%;
+            margin-top: 35px;
+            right: 32%;
+            color: $silver_gray;
+            z-index: 1;
+        }
+        .phone-field-style {
+            margin-top: 35px;
+        }
+        .general-info-data {
+            .cols {
+                padding: 0px 25px 5px 0 !important;
+            }
+            .col1-width {
+                width: 23%;
+            }
+            .col2-width {
+                width: 31%;
+            }
+            .readonly-field-spacing {
+                padding-top: 10px !important;
+                vertical-align: top;
+            }
+        }
+    }
+    .edit-profile {
+        .row {
+            .cols {
+                padding: 10px 25px 10px 0;
+                .input-wrapper {
+                    padding : 0;
+                }
+                .phone-prefix {
+                    input {
+                        padding-left: 15px;
+                    }
+                    span {
+                        margin-left: 15px;
+                    }
+                    .floating-label input:focus + span, 
+                    .floating-label textarea:focus + span, 
+                    .floating-label.floating span {
+                        margin-left: 10px !important;
+                        padding-left: 0px !important;
+                    }
+                }
+            }
+            .add-contact-person {
+                vertical-align: bottom;
+                width: auto;
+            }
+            .heading-viewProfile {
+                padding: 10px 10px 0px 0px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .edit-general-info {
+        .row {
+            .cols {
+                .input-wrapper {
+                    padding : 0;
+                }
+                .phone-prefix {
+                    input {
+                        padding-left: 20px;
+                    }
+                    span {
+                        margin-left: 20px;
+                    }
+                    .floating-label input:focus + span, 
+                    .floating-label textarea:focus + span, 
+                    .floating-label.floating span {
+                        margin-left: 10px !important;
+                        padding-left: 5px !important;
+                    }
+                }
+            }
+            .add-contact-person {
+                vertical-align: bottom;
+                width: auto;
+            }
+            .heading-viewProfile {
+                padding: 10px 10px 0px 10px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .general-info-view {
+        .row {
+            .cols {
+                padding: 10px !important;
+            }
+            .heading-company {
+                padding: 25px 0 10px 10px !important;
+            }
+        }
+    }
+}

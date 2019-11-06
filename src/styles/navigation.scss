@@ -1,0 +1,284 @@
+.navigation {
+    position: relative;
+
+    .left-navbar {
+        width: 17.5%;
+        min-height: 500px;
+        position: fixed;
+
+        .sidebar {
+            overflow-x: auto;
+
+            .subsidebar {
+                overflow: hidden;
+                cursor: pointer;
+                height: auto;
+
+                p {
+                    font-size: 15px;
+                    margin-left: 18px;
+                    border-bottom: 1px solid $gray;
+
+                }
+
+                .down {
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                }
+
+                .up {
+                    transform: rotate(-135deg);
+                    -webkit-transform: rotate(-135deg);
+                }
+
+                //to need to check 
+                i:hover .subsidebar-content {
+                    display: block;
+                    cursor: pointer;
+                }
+
+                i:active .subsidebar-content {
+                    display: block;
+                    cursor: pointer;
+                }
+
+                &:hover .subsidebar-content {
+                    display: block;
+                    cursor: pointer;
+                }
+
+                &:active .subsidebar-content {
+                    display: block;
+                    cursor: pointer;
+                }
+
+                .subsidebar-content {
+                    display: block;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 13px;
+                color: rgba(51, 51, 51, 0.85);
+                display: block;
+
+                .innerSidebar {
+                    .innerelem {
+                        display: hide;
+                    }
+                }
+            }
+        }
+    }
+
+    .top-navbar {
+        width: 82.5%;
+        background-color: #29856B;
+        height: 62px;
+        margin-left: 17.5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .centre-div {
+        width: 82.5%;
+        background-color: $light_gray;
+        height: auto;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        margin-left: 17.5%;
+        min-height: 94vh;
+        
+
+        .container {
+            width: 100%;
+            margin: 4% 2% 2% 0;
+            padding: 0 25px;
+        }
+    
+    }
+
+    .no-border-bottom {
+        border-bottom: none !important;
+    }
+
+    #nav, #nav ul {
+        list-style:none;
+        padding:0;
+        width:252px;
+    }
+    #nav ul {
+        position:relative;
+        z-index:-1;
+    }
+    #nav li {
+        position:relative;
+        z-index:100;
+        min-height: 44px;
+        background-color: #fcfcfc;
+        &:hover {
+            background-color: #EBF5F1;;
+        }
+    }
+    
+
+   #nav li ul li {
+       padding: 9px 0 0 0;
+   }
+
+    #nav li a {
+        display:block;
+        font-size:14px;
+        line-height:28px;
+        outline:0;
+        padding-left:8px;
+        text-decoration:none;
+    }
+
+    #nav li a.sub {
+        background: #FFFFFF;
+        height: 48px;
+        color: rgba(51,51,51,.85);
+        font-weight: 500;
+        padding-top: 8px;
+        padding-left: 15px;
+
+        &:hover {
+            background-color: #EBF5F1;
+        }
+
+    }
+
+    .active-module {
+        background-color: #C7E4DC;
+        color: #FFFFFF;
+        height: 48px;
+        color: rgba(51,51,51,.85);
+        font-weight: 500;
+        padding-top: 8px;
+        padding-left: 15px;
+    }
+    .inactive-module {
+        background-color: #FFFFFF;
+        color: rgba(51,51,51,.85);
+        height: 48px;
+        color: rgba(51,51,51,.85);
+        font-weight: 500;
+        padding-top: 8px;
+        padding-left: 15px;
+    }
+
+
+    .arrow-down {
+        background:  url("/icons/arrow-down.svg") no-repeat right center;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .arrow-up {
+        background:  url("/icons/arrow-down.svg") no-repeat right center;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+        -moz-transform: rotate(180deg);        /* FF */
+        -o-transform: rotate(180deg);          /* Opera */
+        -ms-transform: rotate(180deg);         /* IE9 */
+        transform: rotate(180deg);             /* W3C compliant browsers */
+      
+    }
+    .side-menu-visible {
+        display: block;
+    }
+    .side-menu-hidden {
+        display: none;
+    }
+    #nav li a + i {
+        cursor:pointer;
+        display:block;
+        height:8px;
+        right:3%;
+        position:absolute;
+        top:10px;
+        width:12px;
+    }
+    #nav li a img {
+        border-width:0px;
+        // height:17px;
+        line-height:28px;
+        margin-right:8px;
+        vertical-align:middle;
+        width:16px;
+        opacity: 0.7;
+    }
+
+    .active-menu {
+        background-color: #29856B;
+    }
+    #nav ul li a {
+        width:82%;
+        font-size:13px;
+        display: inline-block;
+    }
+
+
+    #nav ul li img {
+        display: inline-block;
+        margin-left: 37px;
+        width: 8px;
+        height: 8px;
+    }
+
+    #nav ul li a i {
+        border-width:0px;
+        height:16px;
+        line-height:22px;
+        margin-right:5px;
+        vertical-align:middle;
+        width:16px;
+    }
+
+    #nav a.sub:focus {
+        outline:0;
+    }
+
+    #nav a.sub:active {
+        outline:0;
+    }
+    #nav a:active ~ ul li {
+        margin-top:0;
+    }
+    #nav ul:hover li {
+        margin-top:0;
+    }
+    #submenu li img {
+        width: auto;
+        display: inline-block;
+        padding-left: 25px;
+    }
+    #submenu li a {
+        display:inline-block;
+    }  
+
+    .nav-menu-logo {
+        border-bottom: 1px solid #C9C9C9;
+        padding: 9px 5px 8px 5px;
+        height: 62px;
+    }
+      
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+

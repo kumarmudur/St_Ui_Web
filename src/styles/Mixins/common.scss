@@ -1,0 +1,10 @@
+@mixin floating-label($top) {
+    .float-label {
+        position: absolute;
+        top: $top;
+        left: 17px;
+        font-size: 12px;
+        z-index: 1;
+        color: $light_black;
+    }
+}

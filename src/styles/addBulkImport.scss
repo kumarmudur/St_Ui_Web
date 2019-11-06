@@ -1,0 +1,145 @@
+.container {
+    .wrapper-viewbulk-import {
+        .viewbulk-import-container {
+            width: 96%;
+            margin: 15px 0 0 0;
+            height: auto;
+            padding: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .content {
+        background-color: #f5f5f5;
+        .wrapper-addbulkimport {
+            width: 100%;
+            // margin: 5% 0 0 2%;
+            height: auto;
+            background-color: $white;
+            box-shadow: 0 0 6px rgba(0,0,0,0.15);        
+
+            .dropdown-entity {
+                width: 35%;
+                padding: 30px 0 0 0;
+                margin: 0 0 0 30px;
+
+                .Dropdown-root {
+
+                    .Dropdown-control {
+                        padding: 5px 52px 8px 0px;
+
+                        .Dropdown-placeholder {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .radio-importmode {
+                display: block;
+                padding: 10px;
+                margin: 0 10px 0 10px;
+                .radio-header {
+                    color: #999;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                .radio-btn-group {
+                    margin-top: 10px;
+
+                    input[type=radio] {
+                        cursor: pointer;
+                        margin-right: 3px;
+                    }
+
+                    span {
+                        margin-right: 10px;
+                        vertical-align: text-bottom;
+                        color: #555;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .file-content {
+                margin: 65px 0 0 30px;
+                position: relative;
+
+                .download-file {
+                    position: relative;
+
+                    .download-tag {
+                        position: absolute;
+                        top: -22px;
+                        right: 60px;
+                        cursor: pointer;
+                        color: $blue;
+                        text-decoration: none;
+                    }
+                }
+
+                .file-input {
+                    text-align: center;
+                    width: 95%;
+                    height: 40px;
+                    border: 1px solid $dark_gray;
+                    padding: 65px 0 0 0 ;
+                    border-radius: 1px;
+                    cursor: pointer;
+                }
+
+                .upload-text {
+                    position: absolute;
+                    top: 30px;
+                    right: 50%;
+                    cursor: pointer;
+                }
+
+                .upload-csvfile {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                .custom-file-label {
+                    border: 1px solid $light_gray;
+                    width: 94%;
+                    margin: 3px;
+                }
+
+                .custom-file-label::after {
+                    content:"";
+                    background-color: $white;
+                    border-left: none;
+                }
+            }
+
+            .footer-bulkimport {
+                display: block;
+                padding: 0 10px 13px 10px;
+                margin: 0 10px 0 10px;
+                text-align: right;
+                .btn-footer-submit {
+                    margin-right: 0;
+                }
+            }
+
+            .clear {
+                clear: both;
+            }
+            .user-page-heading {
+                padding: 15px 10px 0 10px;
+                margin: 0 10px 0 10px;
+                text-align: left;
+                color: #29856B;
+                font-size: 18px;
+            }
+            .border-wrapper {
+                border-bottom: 1px solid #ccc;
+                padding: 0 10px 0 10px;
+                margin: 10px 20px 0px 20px;
+                display: block;
+            }
+        }
+    }
+}

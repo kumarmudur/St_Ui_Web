@@ -1,0 +1,33 @@
+.logoContainer {
+    margin: 0 auto;
+
+    .logo {
+        margin: 3% auto 3% 32%;
+    }
+
+    .login-logo {
+        margin: 5% 0 0 40%;
+        width: 20%;
+        padding-bottom: 20px;
+    }
+
+    .navigationLogo {
+        margin: 0;
+        width: 90%;
+    }
+
+    .register-logo {
+        margin: 0 auto;
+        width: 20%;
+        display: block;
+        padding: 2% 0;
+    }
+
+    .associate-user-logo {
+        margin: 1% auto;
+        width: 20%;
+        display: block;
+        float:left;
+    }
+}
+

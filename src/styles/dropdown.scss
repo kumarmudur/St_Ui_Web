@@ -1,0 +1,19 @@
+.Dropdown-root {
+
+    .Dropdown-control {
+        border: none;
+        border-bottom: 1px solid $gray;
+
+        &:focus {
+            border-bottom: 1px solid $blue;
+        }
+
+        .Dropdown-placeholder {
+            margin-left: 28px;
+        }
+    }
+    .Dropdown-option{
+        padding: 4px 10px;
+    }
+    
+}
